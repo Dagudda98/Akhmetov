@@ -8,5 +8,9 @@ module.exports = defineConfig({
       allureWriter(on, config);
       return config;
     },
+    reporter: 'cypress-allure-plugin',
+    reporterOptions: {
+      resultsDir: 'D:\Allure\allure-results' // Указан путь для Allure-отчётов
+    },
   },
 });
