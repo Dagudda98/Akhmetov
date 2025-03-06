@@ -10,7 +10,7 @@ module.exports = defineConfig({
     },
     reporter: 'cypress-allure-plugin',
     reporterOptions: {
-      resultsDir: 'D:\Allure\allure-results' // Указан путь для Allure-отчётов
+      resultsDir: 'C:/ProgramData/Jenkins/.jenkins/workspace/Cypress-test/allure-results' // Указан путь для Allure-отчётов
     },
   },
 });
