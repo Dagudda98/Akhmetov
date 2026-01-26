@@ -14,5 +14,6 @@ describe('Login Test', () => {
     cy.get('[data-test="social-facebook"]').should('have.attr', 'href', 'https://www.facebook.com/saucelabs');
     cy.wait(2000);
     cy.get('[data-test="social-linkedin"]').should('have.attr', 'href', 'https://www.linkedin.com/company/sauce-labs/');
+    
   });
 });
