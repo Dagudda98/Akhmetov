@@ -10,6 +10,6 @@ describe('API tests', () => {
     cy.request('POST', 'https://httpbin.org/post', {name: 'TestUser'}).then((response) => {
       expect(response.status).to.eq(200);
       expect(response.body.json).to.deep.equal({name: 'TestUser'});
-    });//2323
+    });//23232323
   });
 })
