@@ -19,7 +19,10 @@ describe('Smoke - Logout', () => {
     cy.get('[data-test="login-button"]').should('be.visible')
 
     // После выхода каталог не должен быть доступен напрямую
-    cy.visit('https://www.saucedemo.com/inventory.html')
+    // Разрешаем загрузить ответ 404 и проверить перенаправление приложения
+    cy.visit('https://www.saucedemo.com/inventory.html', {
+      failOnStatusCode: false
+    })
 
     cy.location('pathname').should('eq', '/')
     cy.get('[data-test="login-button"]').should('be.visible')
